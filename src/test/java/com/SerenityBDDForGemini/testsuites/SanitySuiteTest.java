@@ -1,0 +1,14 @@
+package com.SerenityBDDForGemini.testsuites;
+
+import io.cucumber.junit.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+import org.junit.runner.RunWith;
+
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+        plugin={"pretty"},
+        features="src/test/resources/features/retina",
+        glue="com.SerenityBDDForGemini",
+        tags = "not @ignore"
+)
+public class SanitySuiteTest { }
